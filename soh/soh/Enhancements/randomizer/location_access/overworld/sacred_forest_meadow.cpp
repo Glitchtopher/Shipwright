@@ -5,7 +5,7 @@ using namespace Rando;
 
 void RegionTable_Init_SacredForestMeadow() {
     // clang-format off
-    areaTable[RR_SFM_ENTRYWAY] = Region("SFM Entryway", SCENE_SACRED_FOREST_MEADOW, {
+    areaTable[RR_SFM_ENTRYWAY] = Region("SG Entryway", SCENE_SACRED_FOREST_MEADOW, {
         //Events
         EVENT_ACCESS(LOGIC_OPEN_SFM_GATE, logic->IsChild && logic->CanKillEnemy(RE_WOLFOS)),
     }, {
@@ -18,7 +18,7 @@ void RegionTable_Init_SacredForestMeadow() {
         ENTRANCE(RR_SFM_WOLFOS_GROTTO,    logic->CanOpenBombGrotto()),
     });
 
-    areaTable[RR_SFM_ABOVE_MAZE] = Region("SFM Above Maze", SCENE_SACRED_FOREST_MEADOW, {
+    areaTable[RR_SFM_ABOVE_MAZE] = Region("SG Above Maze", SCENE_SACRED_FOREST_MEADOW, {
         //Events
         EVENT_ACCESS(LOGIC_FAIRY_ACCESS, logic->CallGossipFairyExceptSuns()),
     }, {
@@ -37,7 +37,7 @@ void RegionTable_Init_SacredForestMeadow() {
         ENTRANCE(RR_SACRED_FOREST_MEADOW,     true),
     });
 
-    areaTable[RR_SACRED_FOREST_MEADOW] = Region("Sacred Forest Meadow", SCENE_SACRED_FOREST_MEADOW, {
+    areaTable[RR_SACRED_FOREST_MEADOW] = Region("Sacred Grove", SCENE_SACRED_FOREST_MEADOW, {
         //Events
         EVENT_ACCESS(LOGIC_FAIRY_ACCESS, logic->CallGossipFairyExceptSuns()),
     }, {
@@ -61,13 +61,13 @@ void RegionTable_Init_SacredForestMeadow() {
         ENTRANCE(RR_SFM_STORMS_GROTTO,      logic->CanOpenStormsGrotto()),
     });
 
-    areaTable[RR_SFM_OUTSIDE_FAIRY_GROTTO] = Region("SFM Outside Fairy Grotto", SCENE_SACRED_FOREST_MEADOW, {}, {}, {
+    areaTable[RR_SFM_OUTSIDE_FAIRY_GROTTO] = Region("SG Outside Fairy Grotto", SCENE_SACRED_FOREST_MEADOW, {}, {}, {
         //Exits
         ENTRANCE(RR_SFM_FAIRY_GROTTO, true),
         ENTRANCE(RR_SFM_ABOVE_MAZE,   logic->CanClimbLadder()),
     });
 
-    areaTable[RR_SFM_FAIRY_GROTTO] = Region("SFM Fairy Grotto", SCENE_GROTTOS, {
+    areaTable[RR_SFM_FAIRY_GROTTO] = Region("SG Fairy Grotto", SCENE_GROTTOS, {
         //Events
         EVENT_ACCESS(LOGIC_FAIRY_ACCESS, true),
     }, {
@@ -85,7 +85,7 @@ void RegionTable_Init_SacredForestMeadow() {
         ENTRANCE(RR_SFM_OUTSIDE_FAIRY_GROTTO, true),
     });
 
-    areaTable[RR_SFM_WOLFOS_GROTTO] = Region("SFM Wolfos Grotto", SCENE_GROTTOS, {}, {
+    areaTable[RR_SFM_WOLFOS_GROTTO] = Region("SG Wolfos Grotto", SCENE_GROTTOS, {}, {
         //Locations
         LOCATION(RC_SFM_WOLFOS_GROTTO_CHEST, logic->CanKillEnemy(RE_WOLFOS, ED_CLOSE, true, 2) && logic->HasItem(RG_OPEN_CHEST)),
     }, {
@@ -93,7 +93,7 @@ void RegionTable_Init_SacredForestMeadow() {
         ENTRANCE(RR_SFM_ENTRYWAY, true),
     });
 
-    areaTable[RR_SFM_STORMS_GROTTO] = Region("SFM Storms Grotto", SCENE_GROTTOS, {}, {
+    areaTable[RR_SFM_STORMS_GROTTO] = Region("SG Storms Grotto", SCENE_GROTTOS, {}, {
         //Locations
         LOCATION(RC_SFM_DEKU_SCRUB_GROTTO_REAR,    logic->CanStunDeku() && logic->HasItem(RG_SPEAK_DEKU) && GetCheckPrice() <= GetWalletCapacity()),
         LOCATION(RC_SFM_DEKU_SCRUB_GROTTO_FRONT,   logic->CanStunDeku() && logic->HasItem(RG_SPEAK_DEKU) && GetCheckPrice() <= GetWalletCapacity()),
