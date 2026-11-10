@@ -63,13 +63,13 @@ static EnemyEntry randomizedEnemySpawnTable[] = {
     { CVAR_ENHANCEMENT("RandomizedEnemyList.BlackKnuckle"),     "Iron Knuckle (Black)",  ACTOR_EN_IK,                                 2 }, // Iron Knuckle (black, standing)
     { CVAR_ENHANCEMENT("RandomizedEnemyList.BlueTektite"),      "Blue Tektite",          ACTOR_EN_TITE,                              -2 }, // Tektite (blue)
     { CVAR_ENHANCEMENT("RandomizedEnemyList.Bubble"),           "Bubble",                ACTOR_EN_BB,                                -1 }, // Bubble (flying skull enemy) (blue)
-    { CVAR_ENHANCEMENT("RandomizedEnemyList.ClubMoblin"),       "Club Moblin",           ACTOR_EN_MB,                                 0 }, // Club Moblin
+    { CVAR_ENHANCEMENT("RandomizedEnemyList.ClubMoblin"),       "Great Moblin",          ACTOR_EN_MB,                                 0 }, // Club Moblin
     { CVAR_ENHANCEMENT("RandomizedEnemyList.DarkLink"),         "Dark Link",             ACTOR_EN_TORCH2,                             0 }, // Dark Link
     { CVAR_ENHANCEMENT("RandomizedEnemyList.Dinolfos"),         "Dinolfos",              ACTOR_EN_ZF,                                -2 }, // Dinolfos
     { CVAR_ENHANCEMENT("RandomizedEnemyList.Dodongo"),          "Dodongo",               ACTOR_EN_DODONGO,                           -1 }, // Dodongo
     { CVAR_ENHANCEMENT("RandomizedEnemyList.FireKeese"),        "Fire Keese",            ACTOR_EN_FIREFLY,                            1 }, // Fire Keese
     { CVAR_ENHANCEMENT("RandomizedEnemyList.FlareDancer"),      "Flare Dancer",          ACTOR_EN_FD,                                 0 }, // Flare Dancer
-    { CVAR_ENHANCEMENT("RandomizedEnemyList.FloorTile"),        "Floor Tile",            ACTOR_EN_YUKABYUN,                           0 }, // Flying Floor Tile
+    { CVAR_ENHANCEMENT("RandomizedEnemyList.FloorTile"),        "Flying Tile",           ACTOR_EN_YUKABYUN,                           0 }, // Flying Floor Tile
     { CVAR_ENHANCEMENT("RandomizedEnemyList.Floormaster"),      "Floormaster",           ACTOR_EN_FLOORMAS,                           0 }, // Floormaster
     { CVAR_ENHANCEMENT("RandomizedEnemyList.FlyingPeahat"),     "Flying Peahat",         ACTOR_EN_PEEHAT,                            -1 }, // Flying Peahat (big grounded, doesn't spawn larva)
     { CVAR_ENHANCEMENT("RandomizedEnemyList.FlyingPot"),        "Flying Pot",            ACTOR_EN_TUBO_TRAP,                          0 }, // Flying pot
@@ -106,7 +106,7 @@ static EnemyEntry randomizedEnemySpawnTable[] = {
     { CVAR_ENHANCEMENT("RandomizedEnemyList.SkullKid"),         "Skull Kid",             ACTOR_EN_SKJ,                             4159 }, // Skull Kid
     { CVAR_ENHANCEMENT("RandomizedEnemyList.SmallBaba"),        "Small Deku Baba",       ACTOR_EN_DEKUBABA,                           0 }, // Deku Baba (small)
     { CVAR_ENHANCEMENT("RandomizedEnemyList.SmallStalchild"),   "Stalchild (Small)",     ACTOR_EN_SKB,                                1 }, // Stalchild (small)
-    { CVAR_ENHANCEMENT("RandomizedEnemyList.SpearMoblin"),      "Spear Moblin",          ACTOR_EN_MB,                                -1 }, // Spear Moblin
+    { CVAR_ENHANCEMENT("RandomizedEnemyList.SpearMoblin"),      "Moblin",                ACTOR_EN_MB,                                -1 }, // Spear Moblin
     { CVAR_ENHANCEMENT("RandomizedEnemyList.Spike"),            "Spike",                 ACTOR_EN_NY,                                 0 }, // Spike (rolling enemy)
     { CVAR_ENHANCEMENT("RandomizedEnemyList.Stalfos"),          "Stalfos",               ACTOR_EN_TEST,                               2 }, // Stalfos
     { CVAR_ENHANCEMENT("RandomizedEnemyList.Stinger"),          "Stinger",               ACTOR_EN_EIYER,                             10 }, // Stinger (land) (One in formation, sink under floor and do not activate)
